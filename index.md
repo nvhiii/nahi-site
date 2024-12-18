@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+
+# nahi@Nahi
+
+## Directory
+
+- [About](/about/)
+- [Socials / Resume](/contact/)
+- [Projects](/projects/)
+  <ul>
+  {% for project in site.projects %}
+    <li class="subitem"><a href="{{ project.url }}">{{ project.title }}</a></li>
+  {% endfor %}
+  </ul>
+- [Blog](/posts/)
+  <ul>
+  {% for post in site.posts %}
+    <li class="subitem">{{ post.date | date: "%b %d, %Y" }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>

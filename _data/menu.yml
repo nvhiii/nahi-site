@@ -1,0 +1,14 @@
+entries:
+  - title: "About"
+    url: "/about/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Blog"
+    url: "/posts/"
+    post_list: true # This will display a list of posts under "Blog"
+    limit: 5
+    show_more: true
+    show_more_url: "/posts/"
+    show_more_text: "View all posts"
+  - title: "Contact / Socials"
+    url: "/contact/"

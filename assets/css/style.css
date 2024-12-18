@@ -1,0 +1,148 @@
+/* General body styling */
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+
+/* Container styling */
+.container {
+  width: 100%;
+  max-width: 640px; /* Set the maximum width of the container */
+  margin: 0 auto; /* This ensures the container is centered horizontally */
+  padding: 1rem; /* Padding inside the container */
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 640px) {
+  .container {
+    width: 100%; /* On small screens, container takes full width */
+    padding: 0.5rem; /* Smaller padding on smaller screens */
+  }
+}
+
+/* Additional elements styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Consolas", "Courier New", monospace;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Subheader styling with command-line symbol */
+h2:before {
+  content: ">_ ";
+}
+h2 {
+  margin-bottom: 0.5rem; /* Reduces space below the h2 element */
+}
+
+/* Custom list item styling with indentation */
+ul {
+  list-style-type: none; /* Removes default list bullets */
+  padding: 0;
+  padding-left: 2.5rem; /* Adds padding to the left of the list */
+  margin-top: 0; /* Removes top margin from the ul element */
+}
+
+li:before {
+  content: "$ "; /* Adds a $ before each list item */
+  font-weight: bold; /* Makes the dollar sign bold */
+}
+
+/* Subitem styling for blog posts in the list */
+li.subitem {
+  /* More indentation to differentiate subitems */
+  font-style: italic; /* Optional: style change to denote subitems */
+}
+
+li.subitem a {
+  color: grey; /* Optional: different color for subitem links */
+}
+
+li.subitem:before {
+  content: ""; /* Change the prefix symbol for subitems */
+}
+
+.always-underlined {
+  text-decoration: underline; /* Ensure it's always underlined */
+  color: blue; /* Change the color to blue */
+}
+
+.socials {
+  list-style-type: none; /* Removes default list bullets */
+  padding: 0;
+  padding-left: 2.5rem; /* Adds padding to the left of the list */
+  margin-top: 0; /* Removes top margin from the ul element */
+}
+
+.socials li {
+  display: flex; /* Ensures the contents are in a row */
+  align-items: center; /* Vertically aligns items in the middle */
+  margin-bottom: 10px; /* Space between items */
+}
+
+.socials li:before {
+  margin-right: 20px; /* Right margin for space after $ */
+  font-weight: bold; /* Keeps the $ sign bold */
+  display: inline-block; /* Ensures the $ sign aligns correctly */
+  width: 20px; /* Width to align $ with content from other pages */
+}
+
+.socials i {
+  margin-right: 10px; /* Space between the icon and the text */
+}
+
+.page-container {
+  margin-top: 20px;
+}
+
+.project-container {
+  margin-top: 20px;
+}
+
+.back-to-home {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.back-to-home:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  font-family: "Courier New", Courier, monospace; /* Matches the body font */
+  font-size: 14px; /* Slightly smaller font for the footer */
+  text-align: left; /* Aligns text to the left */
+  padding: 1rem; /* Adds padding inside the footer */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  max-width: 640px; /* Matches the container's maximum width */
+  margin: 0 auto; /* Centers the footer horizontally */
+  margin-top: 20px; /* Adds space above the footer */
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 640px) {
+  footer {
+    padding: 0.5rem; /* Smaller padding on smaller screens */
+    width: 100%; /* Footer takes full width on small screens */
+  }
+}
