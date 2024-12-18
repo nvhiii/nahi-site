@@ -127,22 +127,21 @@ li.subitem:before {
   text-decoration: underline;
 }
 
-/* Footer Styling */
+/* Footer Styling for Larger Screens */
 footer {
   font-family: "Courier New", Courier, monospace; /* Matches the body font */
   font-size: 14px; /* Slightly smaller font for the footer */
-  text-align: left; /* Aligns text to the left */
+  text-align: left; /* Aligns text to the left on larger screens */
   padding: 1rem; /* Adds padding inside the footer */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
   max-width: 640px; /* Matches the container's maximum width */
-  margin: 0 auto; /* Centers the footer horizontally */
+  margin: 0 auto; /* Centers the footer horizontally in the container */
   margin-top: 20px; /* Adds space above the footer */
 }
 
-/* Responsive adjustments for footer */
+/* Footer Styling for Smaller Screens */
 @media (max-width: 640px) {
   footer {
-    padding: 0.5rem; /* Smaller padding on smaller screens */
-    width: 100%; /* Footer takes full width on small screens */
+    text-align: center; /* Centers text on smaller screens */
   }
 }
