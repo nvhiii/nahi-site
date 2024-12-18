@@ -34,14 +34,14 @@ h6 {
   font-family: "Consolas", "Courier New", monospace;
 }
 
-a {
+/* a {
   color: black;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
+} */
 
 /* Subheader styling with command-line symbol */
 h2:before {
@@ -64,18 +64,14 @@ li:before {
   font-weight: bold; /* Makes the dollar sign bold */
 }
 
-/* Subitem styling for blog posts in the list */
-li.subitem {
-  /* More indentation to differentiate subitems */
-  font-style: italic; /* Optional: style change to denote subitems */
-}
-
-li.subitem a {
-  color: grey; /* Optional: different color for subitem links */
-}
-
 li.subitem:before {
   content: ""; /* Change the prefix symbol for subitems */
+}
+
+/* Style for blog post dates */
+.date {
+  font-style: italic; /* Italicize the date */
+  color: inherit; /* Ensure the color matches surrounding text */
 }
 
 .always-underlined {
@@ -297,4 +293,14 @@ footer {
 
 .content p {
   margin-bottom: 15px;
+}
+
+/* Styling for specific links in the index */
+.styled-link {
+  color: black; /* Black text for unvisited links */
+  text-decoration: none; /* Remove underline by default */
+}
+
+.styled-link:hover {
+  text-decoration: underline; /* Underline on hover */
 }

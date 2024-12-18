@@ -11,16 +11,16 @@ title: Home
 
 ## Directory
 
-- [About]({{ site.baseurl }}/about/)
-- [Projects]({{ site.baseurl }}/projects/)
+- <a href="{{ site.baseurl }}/about/" class="styled-link">[About]</a>
+- <a href="{{ site.baseurl }}/projects/" class="styled-link">[Projects]</a>
   <ul>
   {% for project in site.projects %}
     <li class="subitem"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></li>
   {% endfor %}
   </ul>
-- [Blog]({{ site.baseurl }}/posts/)
+- <a href="{{ site.baseurl }}/posts/" class="styled-link">[Blog]</a>
   <ul>
   {% for post in site.posts %}
-    <li class="subitem">{{ post.date | date: "%b %d, %Y" }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li class="subitem"><span class="date">{{ post.date | date: "%b %d, %Y" }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
