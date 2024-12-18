@@ -3,10 +3,11 @@ layout: home
 title: Home
 ---
 
-<div class="back-to-home-placeholder"></div>
-<header>
-  <h1>nahi@Nahi</h1>
-</header>
+<div class="header-container">
+  <header>
+    <h1>nahi@Nahi</h1>
+  </header>
+</div>
 
 ## Directory
 

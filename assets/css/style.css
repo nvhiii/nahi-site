@@ -161,6 +161,12 @@ footer {
   font-size: 16px; /* Consistent size for the path */
 }
 
+/* Styling for Path Header (within navigation-container) */
+.path-header p {
+  margin: 0;
+  font-size: 16px; /* Consistent with other text */
+}
+
 /* Post Date Styling */
 .post-date {
   text-align: right; /* Right-align the date */
@@ -189,4 +195,22 @@ footer {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: left; /* Optional: ensure text alignment is consistent */
+}
+
+/* Header Container for Index Page */
+.header-container {
+  height: 80px; /* Consistent height for both containers */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Navigation Container for Back-to-Home and Path */
+.navigation-container {
+  height: 80px; /* Matches header-container height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px; /* Add padding for spacing */
+  border-bottom: 1px solid #ddd; /* Optional: Separator for clarity */
 }

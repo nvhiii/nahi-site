@@ -3,12 +3,14 @@ layout: default
 ---
 
 <div class="page-container">
-  <a href="{{ site.baseurl }}/" class="back-to-home">[..]</a>
-  <div class="path-header">
-    <p>
-      {{ site.baseurl | append: page.url | remove: site.baseurl | prepend:
-      'nahi@Nahi: ' }}
-    </p>
+  <div class="navigation-container">
+    <a href="{{ site.baseurl }}/" class="back-to-home">[..]</a>
+    <div class="path-header">
+      <p>
+        {{ site.baseurl | append: page.url | remove: site.baseurl | prepend:
+        'nahi@Nahi: ' }}
+      </p>
+    </div>
   </div>
 
   <div class="project-header">
