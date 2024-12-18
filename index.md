@@ -3,7 +3,10 @@ layout: default
 title: Home
 ---
 
-# nahi@Nahi
+<div class="back-to-home-placeholder"></div>
+<header>
+  <h1>nahi@Nahi</h1>
+</header>
 
 ## Directory
 

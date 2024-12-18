@@ -127,6 +127,13 @@ li.subitem:before {
   text-decoration: underline;
 }
 
+/* Placeholder for back-to-home */
+.back-to-home-placeholder {
+  display: block;
+  height: 40px; /* Matches the height of the back-to-home link */
+  margin-bottom: 20px;
+}
+
 /* Footer Styling for Larger Screens */
 footer {
   font-family: "Courier New", Courier, monospace; /* Matches the body font */
