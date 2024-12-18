@@ -4,9 +4,16 @@ layout: default
 
 <div class="page-container">
   <a href="{{ site.baseurl }}/" class="back-to-home">[..]</a>
-  <header>
-    <h1>nahi@Nahi</h1>
-  </header>
+  <div class="path-header">
+    <p>
+      {{ site.baseurl | append: page.url | remove: site.baseurl | prepend:
+      'nahi@Nahi: ' }}
+    </p>
+  </div>
+
+  <div class="project-header">
+    <h2>{{ page.title }}</h2>
+  </div>
 
   <div class="project-content">{{ content }}</div>
 </div>

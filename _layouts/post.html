@@ -4,13 +4,18 @@ layout: default
 
 <div class="page-container">
   <a href="{{ site.baseurl }}/" class="back-to-home">[..]</a>
-  <header>
-    <h1>nahi@Nahi</h1>
-  </header>
+  <div class="path-header">
+    <p>
+      {{ site.baseurl | append: page.url | remove: site.baseurl | prepend:
+      'nahi@Nahi: ' }}
+    </p>
+  </div>
+  <div class="post-date">
+    <p>{{ page.date | date: "%b %d, %Y" }}</p>
+  </div>
 
   <div class="post-header">
     <h2>{{ page.title }}</h2>
-    <p class="post-meta">Posted on {{ page.date | date: "%b %d, %Y" }}</p>
   </div>
 
   <div class="post-content">{{ content }}</div>

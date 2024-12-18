@@ -154,3 +154,39 @@ footer {
     justify-content: center; /* Center icons on smaller screens */
   }
 }
+
+/* Path Header Container */
+.path-header {
+  margin-bottom: 5px; /* Space between path and date */
+  font-size: 16px; /* Consistent size for the path */
+}
+
+/* Post Date Styling */
+.post-date {
+  text-align: right; /* Right-align the date */
+  font-size: 14px; /* Smaller size for the date */
+  color: grey; /* Muted color for the date */
+  margin-bottom: 20px; /* Space below the date */
+}
+
+.post-header h2:before {
+  content: ""; /* Removes the >_ symbol */
+}
+
+/* Post Header */
+.post-header h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Remove >_ before project header h2 */
+.project-header h2:before {
+  content: ""; /* Removes the >_ symbol */
+}
+
+/* Project Header Specific Styling */
+.project-header h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left; /* Optional: ensure text alignment is consistent */
+}
