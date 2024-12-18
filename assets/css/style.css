@@ -83,30 +83,6 @@ li.subitem:before {
   color: blue; /* Change the color to blue */
 }
 
-.socials {
-  list-style-type: none; /* Removes default list bullets */
-  padding: 0;
-  padding-left: 2.5rem; /* Adds padding to the left of the list */
-  margin-top: 0; /* Removes top margin from the ul element */
-}
-
-.socials li {
-  display: flex; /* Ensures the contents are in a row */
-  align-items: center; /* Vertically aligns items in the middle */
-  margin-bottom: 10px; /* Space between items */
-}
-
-.socials li:before {
-  margin-right: 20px; /* Right margin for space after $ */
-  font-weight: bold; /* Keeps the $ sign bold */
-  display: inline-block; /* Ensures the $ sign aligns correctly */
-  width: 20px; /* Width to align $ with content from other pages */
-}
-
-.socials i {
-  margin-right: 10px; /* Space between the icon and the text */
-}
-
 .page-container {
   margin-top: 20px;
 }
@@ -150,5 +126,31 @@ footer {
 @media (max-width: 640px) {
   footer {
     text-align: center; /* Centers text on smaller screens */
+  }
+}
+
+/* Social Media Container Styling */
+.socials-container {
+  display: flex;
+  justify-content: flex-start; /* Align icons to the left on larger screens */
+  gap: 20px; /* Spacing between icons */
+  margin: 20px 0; /* Add space above the footer */
+}
+
+/* Social Icon Styling */
+.social-icon {
+  font-size: 24px; /* Icon size */
+  color: black; /* Default color */
+  text-decoration: none; /* Remove underline */
+}
+
+.social-icon:hover {
+  color: grey; /* Slightly lighter color on hover */
+}
+
+/* Center icons on smaller screens */
+@media (max-width: 640px) {
+  .socials-container {
+    justify-content: center; /* Center icons on smaller screens */
   }
 }

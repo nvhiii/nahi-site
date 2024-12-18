@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 
@@ -11,7 +11,6 @@ title: Home
 ## Directory
 
 - [About]({{ site.baseurl }}/about/)
-- [Socials / Resume]({{ site.baseurl }}/contact/)
 - [Projects]({{ site.baseurl }}/projects/)
   <ul>
   {% for project in site.projects %}
