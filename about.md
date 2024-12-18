@@ -1,6 +1,7 @@
 ---
 layout: page_with_back
 title: About
+permalink: /about/
 ---
 
 ## About
@@ -29,4 +30,4 @@ I'm currently actively looking for SWE internships and SWE roles.
 - trying to understand my cat
 - what is life?
 
-Find more relevant stuff in [my blog](/posts/){: class="always-underlined"}
+Find more relevant stuff in [my blog]({{ site.baseurl }}/posts/){: class="always-underlined"}.

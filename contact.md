@@ -1,6 +1,7 @@
 ---
 layout: page_with_back
 title: Contact
+permalink: /contact/
 ---
 
 ## Contact Information
