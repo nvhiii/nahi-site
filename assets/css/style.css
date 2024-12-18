@@ -214,3 +214,81 @@ footer {
   padding: 0 10px; /* Add padding for spacing */
   border-bottom: 1px solid #ddd; /* Optional: Separator for clarity */
 }
+
+/* Two-Column Layout */
+.project-layout {
+  display: flex;
+  gap: 30px; /* Increase gap to provide space for the sidebar */
+  padding: 20px;
+  align-items: flex-start;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 30%; /* Increase sidebar width to ensure all items fit */
+  max-height: 500px; /* Maintain scrollable behavior for vertical overflow */
+  overflow-y: auto;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Remove $ prefix from list items in the sidebar */
+.sidebar ul {
+  list-style: none; /* Ensure no bullets are displayed */
+  padding: 0; /* Remove extra padding */
+}
+
+.sidebar li {
+  margin-bottom: 8px;
+}
+
+.sidebar li:before {
+  content: none; /* Remove the $ symbol */
+}
+
+.sidebar li ul {
+  margin-left: 20px;
+}
+
+.sidebar a {
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Content Area Styling */
+/* Remove margin from the first heading in the content */
+.content h2:first-of-type {
+  margin-top: 0; /* Remove extra margin at the top of the first heading */
+}
+
+/* Override >_ prefix with </> for specific headers in the project content */
+.content h2.project-header:before {
+  content: "</> "; /* Replaces >_ with </> */
+  font-weight: bold; /* Optional: make it bold for emphasis */
+  color: inherit; /* Ensures it uses the same color as the text */
+}
+
+/* Adjust padding for the content area to align it with the sidebar */
+.content {
+  width: 65%;
+  padding-top: 0; /* Ensure the padding doesn’t add extra space */
+}
+
+.content h3 {
+  margin-top: 20px;
+}
+
+.content p {
+  margin-bottom: 15px;
+}
