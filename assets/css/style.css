@@ -267,6 +267,12 @@ footer {
 }
 
 /* Content Area Styling */
+
+/* Remove top margin from the first h1 (title) in the content area */
+.content h1:first-of-type {
+  margin-top: 0; /* Eliminates unnecessary space above the title */
+}
+
 /* Remove margin from the first heading in the content */
 .content h2:first-of-type {
   margin-top: 0; /* Remove extra margin at the top of the first heading */

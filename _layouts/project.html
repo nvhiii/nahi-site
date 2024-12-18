@@ -18,50 +18,34 @@ layout: default
       <!-- Left Sidebar -->
       <div class="sidebar">
         <ul>
-          <li><a href="#getting-started">Getting Started</a></li>
+          {% for section in page.sections %}
+          <li><a href="#{{ section.id }}">{{ section.title }}</a></li>
+          {% if section.subsections %}
           <ul>
-            <li><a href="#getting-started-intro">Introduction</a></li>
-            <li><a href="#getting-started-install">Installation</a></li>
+            {% for subsection in section.subsections %}
+            <li><a href="#{{ subsection.id }}">{{ subsection.title }}</a></li>
+            {% endfor %}
           </ul>
-          <li><a href="#documentation">Documentation</a></li>
-          <ul>
-            <li><a href="#documentation-usage">Usage</a></li>
-            <li><a href="#documentation-api">API Reference</a></li>
-          </ul>
-          <li><a href="#development">Development</a></li>
-          <ul>
-            <li><a href="#development-environment">Environment Setup</a></li>
-            <li>
-              <a href="#development-guidelines">Contribution Guidelines</a>
-            </li>
-          </ul>
+          {% endif %} {% endfor %}
         </ul>
       </div>
 
       <!-- Right Content Area -->
       <div class="content">
-        <h2 id="getting-started" class="project-header">Getting Started</h2>
-        <h3 id="getting-started-intro">Introduction</h3>
-        <p>
-          Welcome to the project! This section helps you get started quickly.
-        </p>
+        <!-- Title dynamically included -->
+        <h1 class="project-title">{{ page.title }}</h1>
 
-        <h3 id="getting-started-install">Installation</h3>
-        <p>Follow these steps to install the project on your system.</p>
+        <!-- Render sections dynamically -->
+        {% for section in page.sections %}
+        <h2 id="{{ section.id }}" class="project-header">
+          {{ section.title }}
+        </h2>
+        <p>{{ section.description }}</p>
 
-        <h2 id="documentation" class="project-header">Documentation</h2>
-        <h3 id="documentation-usage">Usage</h3>
-        <p>Here is how you can use the project effectively.</p>
-
-        <h3 id="documentation-api">API Reference</h3>
-        <p>A comprehensive guide to the API endpoints available.</p>
-
-        <h2 id="development" class="project-header">Development</h2>
-        <h3 id="development-environment">Environment Setup</h3>
-        <p>Steps to set up the development environment.</p>
-
-        <h3 id="development-guidelines">Contribution Guidelines</h3>
-        <p>Guidelines for contributing to the project.</p>
+        {% if section.subsections %} {% for subsection in section.subsections %}
+        <h3 id="{{ subsection.id }}">{{ subsection.title }}</h3>
+        <p>{{ subsection.content }}</p>
+        {% endfor %} {% endif %} {% endfor %}
       </div>
     </div>
   </div>
