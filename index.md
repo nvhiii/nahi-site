@@ -15,7 +15,7 @@ title: Home
 - [Projects]({{ site.baseurl }}/projects/)
   <ul>
   {% for project in site.projects %}
-    <li class="subitem"><a href="{{ project.url }}">{{ project.title }}</a></li>
+    <li class="subitem"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></li>
   {% endfor %}
   </ul>
 - [Blog]({{ site.baseurl }}/posts/)
