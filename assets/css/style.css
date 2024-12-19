@@ -304,3 +304,100 @@ footer {
 .styled-link:hover {
   text-decoration: underline; /* Underline on hover */
 }
+
+/* Style for paragraph separators */
+.paragraph-separator {
+  text-align: center;
+  margin: 2rem 0; /* Space around the slashes */
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: grey;
+}
+
+.footnotes-section ul {
+  padding-left: 2rem;
+}
+
+.footnotes-section li sup {
+  font-size: 0.8em;
+  color: grey;
+  margin-right: 0.5rem;
+}
+
+.discussions-section ul {
+  padding-left: 2rem;
+}
+
+.discussions-section li a {
+  text-decoration: none;
+  color: blue;
+}
+
+.discussions-section li a:hover {
+  text-decoration: underline;
+}
+
+/* Centered title for sections */
+.section-title {
+  font-weight: normal;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+br {
+  display: none;
+}
+
+/* Remove the $ sign from ordered list items in the footnotes section */
+.footnotes-section ol li:before {
+  content: none !important; /* Ensures no extra symbols appear */
+}
+
+/* Remove the $ sign from ordered list items in the discussions section */
+.discussions-section ol li:before {
+  content: none !important; /* Ensures no extra symbols appear */
+}
+
+/* Add these to your existing stylesheet */
+
+/* Code block styling */
+.post-content pre {
+  background: #f6f8fa;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.post-content code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  padding: 0.2em 0.4em;
+  background: #f6f8fa;
+  border-radius: 3px;
+}
+
+/* Markdown specific overrides */
+.post-content h2:before {
+  content: "" !important; /* Override the >_ prefix for markdown headers */
+}
+
+.post-content ul {
+  list-style-type: disc !important; /* Override the custom list styling for markdown lists */
+  padding-left: 2em;
+}
+
+.post-content li:before {
+  content: none !important; /* Remove the $ prefix for markdown lists */
+}
+
+.post-content ol {
+  list-style-type: decimal !important;
+  padding-left: 2em;
+}
+
+/* Footnotes specific styling */
+.post-content .footnotes {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #e1e4e8;
+}

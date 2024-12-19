@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="page-container">
+  {% if page.usemathjax %} {% include mathjax.html %} {% endif %}
   <div class="navigation-container">
     <a href="{{ site.baseurl }}/" class="back-to-home">[..]</a>
     <div class="path-header">
@@ -21,4 +22,31 @@ layout: default
   </div>
 
   <div class="post-content">{{ content }}</div>
+
+  {% if page.footnotes %}
+  <div class="footnotes-section">
+    <h3 class="section-title">/////footnotes/////</h3>
+    <ol>
+      {% for footnote in page.footnotes %}
+      <li id="footnote-{{ forloop.index }}">
+        {{ footnote }}
+        <a href="#ref-{{ forloop.index }}" class="footnote-backlink">↩</a>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  {% endif %} {% if page.discussions %}
+  <div class="discussions-section">
+    <h3 class="section-title">/////discussions/////</h3>
+    <ol>
+      {% for discussion in page.discussions %}
+      <li>
+        <a href="{{ discussion.url }}" target="_blank"
+          >{{ discussion.title }}</a
+        >
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  {% endif %}
 </div>
