@@ -1,6 +1,11 @@
 ---
 layout: project
 title: Meddy
+github_repo: "https://github.com/KhromeM/meddy"
+custom_link: "https://trymeddy.com/"
+custom_link_two: "https://www.youtube.com/watch?v=v3aB5pym91A"
+custom_link_text: "Live Link"
+custom_link_text_two: "Demo"
 sections:
   - id: getting-started
     title: Getting Started

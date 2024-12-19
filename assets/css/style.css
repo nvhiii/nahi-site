@@ -245,6 +245,11 @@ footer {
   margin-bottom: 8px;
 }
 
+.sidebar-links {
+  color: darkblue;
+  text-decoration: underline;
+}
+
 .sidebar li:before {
   content: none; /* Remove the $ symbol */
 }

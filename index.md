@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: Nahi Khan
 ---
 
 <div class="header-container">
