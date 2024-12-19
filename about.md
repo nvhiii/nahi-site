@@ -11,11 +11,11 @@ I'm currently actively looking for SWE internships and SWE roles.
 
 ### Interests
 
+- getting better at codeforces lmao
 - cooking
 - hitting PRs at the gym
-- museums
-- coffee
-- curating playlists
+- impressionist art (landscapes in general are a1)
+- custom keebs
 - fractals
 
 ### Dislikes
@@ -28,7 +28,8 @@ I'm currently actively looking for SWE internships and SWE roles.
 ### Occupying My Time
 
 - making this site
-- trying to understand my cat
+- curating playlists
+- trying to _pspsps_ all stray cats in NYC
 - what is life?
 
 ### Things I'm Learning or Have Learned:
