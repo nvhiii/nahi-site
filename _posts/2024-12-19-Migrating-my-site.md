@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Migrating to Jekyll"
-date: 2024-12-19 00:55:50 +0000
+date: 2024-12-19 10:00:00 +0000
 categories: hosting jekyll ssgs
 footnotes:
   - Reddit
