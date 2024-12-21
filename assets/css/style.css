@@ -56,7 +56,11 @@ ul {
   list-style-type: none; /* Removes default list bullets */
   padding: 0;
   padding-left: 2.5rem; /* Adds padding to the left of the list */
-  margin-top: 0; /* Removes top margin from the ul element */
+  margin-top: 10px; /* Removes top margin from the ul element */
+}
+
+ul li {
+  margin-bottom: 10px; /* Add space between items within the list */
 }
 
 li:before {
@@ -138,6 +142,9 @@ footer {
   font-size: 24px; /* Icon size */
   color: black; /* Default color */
   text-decoration: none; /* Remove underline */
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
 }
 
 .social-icon:hover {
@@ -304,6 +311,7 @@ footer {
 .styled-link {
   color: black; /* Black text for unvisited links */
   text-decoration: none; /* Remove underline by default */
+  padding-bottom: 10px;
 }
 
 .styled-link:hover {
