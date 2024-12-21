@@ -2,7 +2,6 @@
 layout: post
 title: "Hosting Jekyll Site on DigitalOcean"
 date: 2024-12-19 12:54:36 +0000
-categories: hosting jekyll ruby digitalocean
 ---
 
 ### Prerequisites:
