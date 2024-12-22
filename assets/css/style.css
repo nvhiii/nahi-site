@@ -337,6 +337,40 @@ footer {
   margin-right: 0.5rem;
 }
 
+.footnotes-section ol {
+  list-style-type: decimal; /* Ensures numbers are used */
+  padding-left: 2rem; /* Adds some padding to align text nicely */
+}
+
+.footnotes-section ol li {
+  display: list-item !important;
+  align-items: relative;
+  margin-bottom: 10px;
+}
+
+/* Style the footnote span container */
+.footnotes-section ol li span {
+  display: inline-flex; /* Change to inline-flex for tighter spacing */
+  align-items: baseline; /* Align items to the text baseline */
+  gap: 4px; /* Small gap between content and backlink */
+}
+
+/* Style the footnote content */
+.footnotes-section ol li span p {
+  margin: 0; /* Remove default paragraph margins */
+  display: inline; /* Keep text inline */
+}
+
+/* Style the backlink */
+.footnotes-section .footnote-backlink {
+  margin-left: auto; /* Push to the right */
+  font-size: 0.8em;
+  color: grey;
+  text-decoration: none;
+  flex-shrink: 0; /* Prevent backlink from shrinking */
+  align-self: flex-start; /* Align to the top */
+}
+
 .discussions-section ul {
   padding-left: 2rem;
 }

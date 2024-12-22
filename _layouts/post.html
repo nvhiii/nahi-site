@@ -29,8 +29,21 @@ layout: default
     <ol>
       {% for footnote in page.footnotes %}
       <li id="footnote-{{ forloop.index }}">
-        {{ footnote }}
-        <a href="#ref-{{ forloop.index }}" class="footnote-backlink">↩</a>
+        <span>
+          {{ footnote | markdownify }}
+          <a
+            href="#ref-{{ forloop.index }}"
+            class="footnote-backlink"
+            style="
+              margin-left: 5px;
+              font-size: 0.8em;
+              color: grey;
+              text-decoration: none;
+            "
+            aria-label="Back to reference {{ forloop.index }}"
+            >↩</a
+          >
+        </span>
       </li>
       {% endfor %}
     </ol>
