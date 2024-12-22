@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hosting Jekyll Site on DigitalOcean"
+tags: [tech]
 date: 2024-12-19 12:54:36 +0000
 ---
 

@@ -72,3 +72,5 @@ kramdown:
 gems:
   - jekyll-feed
   - kramdown-parser-gfm
+
+permalink: /posts/:title/ # Ensures posts have the desired URL structure

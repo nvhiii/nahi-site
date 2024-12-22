@@ -448,3 +448,65 @@ br {
   padding-top: 16px;
   border-top: 1px solid #e1e4e8;
 }
+
+/* Tags filter styling */
+.tags-filter {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-item {
+  display: inline-block;
+}
+
+.tag-item a {
+  padding: 0.2rem 0.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.tag-item.active a {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+
+.tag-item a:hover {
+  background: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+}
+
+.tag-item.active a:hover {
+  background: #333;
+  color: white;
+}
+
+/* Post list styling */
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.post-tags {
+  display: inline-flex;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.tag-label {
+  font-size: 0.8rem;
+  color: #666;
+}
