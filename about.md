@@ -28,7 +28,7 @@ I'm currently actively looking for SWE internships and SWE roles.
 ### Occupying My Time
 
 - making this site
-- curating playlists
+- [Curating playists](https://open.spotify.com/user/224o2lzbiibqlr3ncsuf6qtwy?trackId=2Rw6wkd0q3LXx5xsdjLs1P), [reading books](https://www.goodreads.com/user/show/184934026-nahi-khan), and [solving tough-ish problems](https://codeforces.com/profile/nvhi)
 - trying to _pspsps_ all stray cats in NYC
 - what is life?
 

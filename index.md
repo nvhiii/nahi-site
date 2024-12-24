@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Nahi Khan
 ---
 
@@ -24,3 +24,4 @@ title: Nahi Khan
     <li class="subitem"><span class="date">{{ post.date | date: "%b %d, %Y" }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
   </ul>
+- <a href="{{ site.baseurl }}/sitemap.xml" class="styled-link">[SiteMap]</a>
