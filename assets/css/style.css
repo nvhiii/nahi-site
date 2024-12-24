@@ -1,4 +1,4 @@
-/* General body styling */
+/* Base styles */
 body {
   font-family: "Courier New", Courier, monospace;
   margin: 0;
@@ -7,24 +7,23 @@ body {
   color: black;
 }
 
-/* Container styling */
+/* Container and layout */
 .container {
   width: 100%;
-  max-width: 640px; /* Set the maximum width of the container */
-  margin: 0 auto; /* This ensures the container is centered horizontally */
-  padding: 1rem; /* Padding inside the container */
-  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-/* Responsive design adjustments */
 @media (max-width: 640px) {
   .container {
-    width: 100%; /* On small screens, container takes full width */
-    padding: 0.5rem; /* Smaller padding on smaller screens */
+    width: 100%;
+    padding: 0.5rem;
   }
 }
 
-/* Additional elements styling */
+/* Typography */
 h1,
 h2,
 h3,
@@ -34,207 +33,128 @@ h6 {
   font-family: "Consolas", "Courier New", monospace;
 }
 
-/* a {
-  color: black;
-  text-decoration: none;
+h2 {
+  margin-bottom: 0.5rem;
 }
 
-a:hover {
-  text-decoration: underline;
-} */
-
-/* Subheader styling with command-line symbol */
 h2:before {
   content: ">_ ";
 }
-h2 {
-  margin-bottom: 0.5rem; /* Reduces space below the h2 element */
-}
 
-/* Custom list item styling with indentation */
+/* Lists */
 ul {
-  list-style-type: none; /* Removes default list bullets */
-  padding: 0;
-  padding-left: 2.5rem; /* Adds padding to the left of the list */
-  margin-top: 10px; /* Removes top margin from the ul element */
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-top: 10px;
 }
 
 ul li {
-  margin-bottom: 10px; /* Add space between items within the list */
+  margin-bottom: 10px;
 }
 
 li:before {
-  content: "$ "; /* Adds a $ before each list item */
-  font-weight: bold; /* Makes the dollar sign bold */
+  content: "$ ";
+  font-weight: bold;
 }
 
 li.subitem:before {
-  content: ""; /* Change the prefix symbol for subitems */
+  content: "";
 }
 
-/* Style for blog post dates */
-.date {
-  font-style: italic; /* Italicize the date */
-  color: inherit; /* Ensure the color matches surrounding text */
-}
-
-.always-underlined {
-  text-decoration: underline; /* Ensure it's always underlined */
-  color: blue; /* Change the color to blue */
-}
-
-.page-container {
-  margin-top: 20px;
-}
-
-.project-container {
-  margin-top: 20px;
-}
-
+/* Links */
+.styled-link,
 .back-to-home {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 16px;
   color: black;
   text-decoration: none;
 }
 
+.styled-link:hover,
 .back-to-home:hover {
   text-decoration: underline;
 }
 
-/* Placeholder for back-to-home */
-.back-to-home-placeholder {
-  display: block;
-  height: 40px; /* Matches the height of the back-to-home link */
-  margin-bottom: 20px;
+.always-underlined {
+  text-decoration: underline;
+  color: blue;
 }
 
-/* Footer Styling for Larger Screens */
+/* Layout containers */
+.page-container,
+.project-container {
+  margin-top: 20px;
+}
+
+/* Footer */
 footer {
-  font-family: "Courier New", Courier, monospace; /* Matches the body font */
-  font-size: 14px; /* Slightly smaller font for the footer */
-  text-align: left; /* Aligns text to the left on larger screens */
-  padding: 1rem; /* Adds padding inside the footer */
-  box-sizing: border-box; /* Ensures padding doesn't affect width */
-  max-width: 640px; /* Matches the container's maximum width */
-  margin: 0 auto; /* Centers the footer horizontally in the container */
-  margin-top: 20px; /* Adds space above the footer */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  text-align: left;
+  padding: 1rem;
+  box-sizing: border-box;
+  max-width: 640px;
+  margin: 20px auto 0;
 }
 
-/* Footer Styling for Smaller Screens */
 @media (max-width: 640px) {
   footer {
-    text-align: center; /* Centers text on smaller screens */
+    text-align: center;
   }
 }
 
-/* Social Media Container Styling */
+/* Social media */
 .socials-container {
   display: flex;
-  justify-content: flex-start; /* Align icons to the left on larger screens */
-  gap: 20px; /* Spacing between icons */
-  margin: 20px 0; /* Add space above the footer */
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 20px 0;
 }
 
-/* Social Icon Styling */
 .social-icon {
-  font-size: 24px; /* Icon size */
-  color: black; /* Default color */
-  text-decoration: none; /* Remove underline */
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
   display: inline-flex;
   width: 24px;
   height: 24px;
 }
 
 .social-icon:hover {
-  color: grey; /* Slightly lighter color on hover */
+  color: grey;
 }
 
-/* Center icons on smaller screens */
 @media (max-width: 640px) {
   .socials-container {
-    justify-content: center; /* Center icons on smaller screens */
+    justify-content: center;
   }
 }
 
-/* Path Header Container */
-.path-header {
-  margin-bottom: 5px; /* Space between path and date */
-  font-size: 16px; /* Consistent size for the path */
-}
-
-/* Styling for Path Header (within navigation-container) */
-.path-header p {
-  margin: 0;
-  font-size: 16px; /* Consistent with other text */
-}
-
-/* Post Date Styling */
-.post-date {
-  text-align: right; /* Right-align the date */
-  font-size: 14px; /* Smaller size for the date */
-  color: grey; /* Muted color for the date */
-  margin-bottom: 20px; /* Space below the date */
-}
-
-.post-header h2:before {
-  content: ""; /* Removes the >_ symbol */
-}
-
-/* Post Header */
-.post-header h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-/* Remove >_ before project header h2 */
-.project-header h2:before {
-  content: ""; /* Removes the >_ symbol */
-}
-
-/* Project Header Specific Styling */
-.project-header h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align: left; /* Optional: ensure text alignment is consistent */
-}
-
-/* Header Container for Index Page */
-.header-container {
-  height: 80px; /* Consistent height for both containers */
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-/* Navigation Container for Back-to-Home and Path */
+/* Headers and navigation */
+.header-container,
 .navigation-container {
-  height: 80px; /* Matches header-container height */
+  height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 10px; /* Add padding for spacing */
-  border-bottom: 1px solid #ddd; /* Optional: Separator for clarity */
 }
 
-/* Two-Column Layout */
+.navigation-container {
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Project layout */
 .project-layout {
   display: flex;
-  gap: 30px; /* Increase gap to provide space for the sidebar */
+  gap: 30px;
   padding: 20px;
   align-items: flex-start;
 }
 
-/* Sidebar Styling */
+/* Sidebar */
 .sidebar {
-  width: 30%; /* Increase sidebar width to ensure all items fit */
-  max-height: 500px; /* Maintain scrollable behavior for vertical overflow */
+  width: 30%;
+  max-height: 500px;
   overflow-y: auto;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
 }
 
 .sidebar h3 {
@@ -242,14 +162,21 @@ footer {
   margin-bottom: 10px;
 }
 
-/* Remove $ prefix from list items in the sidebar */
 .sidebar ul {
-  list-style: none; /* Ensure no bullets are displayed */
-  padding: 0; /* Remove extra padding */
+  list-style: none;
+  padding: 0;
 }
 
 .sidebar li {
   margin-bottom: 8px;
+}
+
+.sidebar li:before {
+  content: none;
+}
+
+.sidebar li ul {
+  margin-left: 20px;
 }
 
 .sidebar-links {
@@ -257,158 +184,38 @@ footer {
   text-decoration: underline;
 }
 
-.sidebar li:before {
-  content: none; /* Remove the $ symbol */
-}
-
-.sidebar li ul {
-  margin-left: 20px;
-}
-
-.sidebar a {
-  color: black;
-  text-decoration: none;
-}
-
-.sidebar a:hover {
-  text-decoration: underline;
-}
-
-/* Content Area Styling */
-
-/* Remove top margin from the first h1 (title) in the content area */
-.content h1:first-of-type {
-  margin-top: 0; /* Eliminates unnecessary space above the title */
-}
-
-/* Remove margin from the first heading in the content */
-.content h2:first-of-type {
-  margin-top: 0; /* Remove extra margin at the top of the first heading */
-}
-
-/* Override >_ prefix with </> for specific headers in the project content */
-.content h2.project-header:before {
-  content: "</> "; /* Replaces >_ with </> */
-  font-weight: bold; /* Optional: make it bold for emphasis */
-  color: inherit; /* Ensures it uses the same color as the text */
-}
-
-/* Adjust padding for the content area to align it with the sidebar */
+/* Content area */
 .content {
   width: 65%;
-  padding-top: 0; /* Ensure the padding doesn’t add extra space */
+  padding-top: 0;
 }
 
-.content h3 {
-  margin-top: 20px;
+.content h1:first-of-type,
+.content h2:first-of-type {
+  margin-top: 0;
 }
 
-.content p {
-  margin-bottom: 15px;
-}
-
-/* Styling for specific links in the index */
-.styled-link {
-  color: black; /* Black text for unvisited links */
-  text-decoration: none; /* Remove underline by default */
-  padding-bottom: 10px;
-}
-
-.styled-link:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-/* Style for paragraph separators */
-.paragraph-separator {
-  text-align: center;
-  margin: 2rem 0; /* Space around the slashes */
+.content h2.project-header:before {
+  content: "</> ";
   font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
+  color: inherit;
+}
+
+/* Post styles */
+.post-header h2:before,
+.project-header h2:before,
+.post-content h2:before {
+  content: "";
+}
+
+.post-date {
+  text-align: right;
+  font-size: 14px;
   color: grey;
+  margin-bottom: 20px;
 }
 
-.footnotes-section ul {
-  padding-left: 2rem;
-}
-
-.footnotes-section li sup {
-  font-size: 0.8em;
-  color: grey;
-  margin-right: 0.5rem;
-}
-
-.footnotes-section ol {
-  list-style-type: decimal; /* Ensures numbers are used */
-  padding-left: 2rem; /* Adds some padding to align text nicely */
-}
-
-.footnotes-section ol li {
-  display: list-item !important;
-  align-items: relative;
-  margin-bottom: 10px;
-}
-
-/* Style the footnote span container */
-.footnotes-section ol li span {
-  display: inline-flex; /* Change to inline-flex for tighter spacing */
-  align-items: baseline; /* Align items to the text baseline */
-  gap: 4px; /* Small gap between content and backlink */
-}
-
-/* Style the footnote content */
-.footnotes-section ol li span p {
-  margin: 0; /* Remove default paragraph margins */
-  display: inline; /* Keep text inline */
-}
-
-/* Style the backlink */
-.footnotes-section .footnote-backlink {
-  margin-left: auto; /* Push to the right */
-  font-size: 0.8em;
-  color: grey;
-  text-decoration: none;
-  flex-shrink: 0; /* Prevent backlink from shrinking */
-  align-self: flex-start; /* Align to the top */
-}
-
-.discussions-section ul {
-  padding-left: 2rem;
-}
-
-.discussions-section li a {
-  text-decoration: none;
-  color: blue;
-}
-
-.discussions-section li a:hover {
-  text-decoration: underline;
-}
-
-/* Centered title for sections */
-.section-title {
-  font-weight: normal;
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 1rem;
-}
-
-br {
-  display: none;
-}
-
-/* Remove the $ sign from ordered list items in the footnotes section */
-.footnotes-section ol li:before {
-  content: none !important; /* Ensures no extra symbols appear */
-}
-
-/* Remove the $ sign from ordered list items in the discussions section */
-.discussions-section ol li:before {
-  content: none !important; /* Ensures no extra symbols appear */
-}
-
-/* Add these to your existing stylesheet */
-
-/* Code block styling */
+/* Code blocks */
 .post-content pre {
   background: #f6f8fa;
   padding: 16px;
@@ -423,18 +230,10 @@ br {
   border-radius: 3px;
 }
 
-/* Markdown specific overrides */
-.post-content h2:before {
-  content: "" !important; /* Override the >_ prefix for markdown headers */
-}
-
+/* Markdown content */
 .post-content ul {
-  list-style-type: disc !important; /* Override the custom list styling for markdown lists */
+  list-style-type: disc !important;
   padding-left: 2em;
-}
-
-.post-content li:before {
-  content: none !important; /* Remove the $ prefix for markdown lists */
 }
 
 .post-content ol {
@@ -442,23 +241,16 @@ br {
   padding-left: 2em;
 }
 
-/* Footnotes specific styling */
-.post-content .footnotes {
-  margin-top: 32px;
-  padding-top: 16px;
-  border-top: 1px solid #e1e4e8;
+.post-content li:before {
+  content: none !important;
 }
 
-/* Tags filter styling */
+/* Tags */
 .tags-filter {
   margin: 1.5rem 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-}
-
-.tag-item {
-  display: inline-block;
 }
 
 .tag-item a {
@@ -481,7 +273,6 @@ br {
 .tag-item a:hover {
   background: #f0f0f0;
   color: #333;
-  text-decoration: none;
 }
 
 .tag-item.active a:hover {
@@ -489,18 +280,21 @@ br {
   color: white;
 }
 
-/* Post list styling */
-.post-list {
+/* Lists */
+.post-list,
+.project-list {
   list-style: none;
   padding: 0;
 }
 
-.post-item {
+.post-item,
+.project-item {
   margin-bottom: 1rem;
   padding: 0.5rem 0;
 }
 
-.post-tags {
+.post-tags,
+.project-tags {
   display: inline-flex;
   gap: 0.5rem;
   margin-left: 0.5rem;
@@ -509,4 +303,46 @@ br {
 .tag-label {
   font-size: 0.8rem;
   color: #666;
+}
+
+/* Footnotes */
+.footnotes-section {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #e1e4e8;
+}
+
+.footnotes-section ol {
+  list-style-type: decimal;
+  padding-left: 2rem;
+}
+
+.footnotes-section ol li {
+  display: list-item !important;
+  margin-bottom: 10px;
+}
+
+.footnotes-section ol li:before {
+  content: none !important;
+}
+
+.footnotes-section .footnote-backlink {
+  margin-left: auto;
+  font-size: 0.8em;
+  color: grey;
+  text-decoration: none;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+/* Utilities */
+.section-title {
+  font-weight: normal;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+br {
+  display: none;
 }

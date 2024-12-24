@@ -6,6 +6,7 @@ custom_link: "https://trymeddy.com/"
 custom_link_two: "https://www.youtube.com/watch?v=v3aB5pym91A"
 custom_link_text: "Live Link"
 custom_link_text_two: "Demo"
+tags: [tech, web-app, documentation]
 sections:
   - id: getting-started
     title: Getting Started
@@ -41,4 +42,4 @@ sections:
         content: Guidelines for contributing to Meddy.
 ---
 
-# template to follow in the future for projs
+# template for other projs to follow
