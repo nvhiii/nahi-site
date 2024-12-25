@@ -145,7 +145,7 @@ footer {
 /* Project layout */
 .project-layout {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   padding: 20px;
   align-items: flex-start;
 }
@@ -153,8 +153,9 @@ footer {
 /* Sidebar */
 .sidebar {
   width: 30%;
-  max-height: 500px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar h3 {
@@ -184,6 +185,41 @@ footer {
   text-decoration: underline;
 }
 
+.sidebar-sections h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.sidebar-sections ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-sections li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-sections li:before {
+  content: none;
+}
+
+.sidebar-sections a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar-sections a:hover {
+  color: #666;
+}
+
+.sidebar-sections ul ul {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
 /* Content area */
 .content {
   width: 65%;
@@ -199,6 +235,14 @@ footer {
   content: "</> ";
   font-weight: bold;
   color: inherit;
+}
+
+.project-summary {
+  background-color: #f6f8fa;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 10px;
 }
 
 /* Post styles */
@@ -345,4 +389,35 @@ footer {
 
 br {
   display: none;
+}
+
+/* External Links Container */
+.external-links {
+  margin-top: auto;
+  border-top: 1px solid #eee;
+}
+
+.external-links h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.external-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #0366d6;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.external-links a:hover {
+  color: #035fc7;
+  text-decoration: underline;
+}
+
+.external-links i {
+  width: 16px;
 }

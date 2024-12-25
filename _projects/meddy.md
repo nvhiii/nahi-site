@@ -7,6 +7,7 @@ custom_link_two: "https://www.youtube.com/watch?v=v3aB5pym91A"
 custom_link_text: "Live Link"
 custom_link_text_two: "Demo"
 tags: [tech, web-app, documentation]
+summary: A medical AI assistant intended to bridge the communication gap between doctors and non-English speakers!
 sections:
   - id: getting-started
     title: Getting Started

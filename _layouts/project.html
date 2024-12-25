@@ -17,58 +17,63 @@ layout: default
     <div class="project-layout">
       <!-- Left Sidebar -->
       <div class="sidebar">
-        <div class="sidebar-links">
-          {% if page.github_repo %}
-          <p>
-            <a
-              href="{{ page.github_repo }}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-brands fa-github"> </i> GitHub Repository
-            </a>
-          </p>
-          {% endif %} {% if page.custom_link and page.custom_link_text %}
-          <p>
-            <a
-              href="{{ page.custom_link }}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fas fa-link"> </i> {{ page.custom_link_text }}
-            </a>
-          </p>
-          {% endif %}
-        </div>
-        <ul>
-          {% for section in page.sections %}
-          <li><a href="#{{ section.id }}">{{ section.title }}</a></li>
-          {% if section.subsections %}
+        <!-- Project Summary -->
+        <div class="project-summary">{{ page.summary }}</div>
+
+        <!-- Section Navigation -->
+        <div class="sidebar-sections">
+          <h3>Contents</h3>
           <ul>
-            {% for subsection in section.subsections %}
-            <li><a href="#{{ subsection.id }}">{{ subsection.title }}</a></li>
-            {% endfor %}
+            {% for section in page.sections %}
+            <li><a href="#{{ section.id }}">{{ section.title }}</a></li>
+            {% if section.subsections %}
+            <ul>
+              {% for subsection in section.subsections %}
+              <li><a href="#{{ subsection.id }}">{{ subsection.title }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %} {% endfor %}
           </ul>
-          {% endif %} {% endfor %}
-        </ul>
-      </div>
+        </div>
 
-      <!-- Right Content Area -->
-      <div class="content">
-        <!-- Title dynamically included -->
-        <h1 class="project-title">{{ page.title }}</h1>
-
-        {% if page.custom_link_two and page.custom_link_text_two %}
-        <p>
+        <!-- External Links -->
+        <div class="external-links">
+          <h3>Related Links</h3>
+          {% if page.github_repo %}
+          <a
+            href="{{ page.github_repo }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
+            GitHub Repository
+          </a>
+          {% endif %} {% if page.custom_link and page.custom_link_text %}
+          <a
+            href="{{ page.custom_link }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fas fa-link"></i>
+            {{ page.custom_link_text }}
+          </a>
+          {% endif %} {% if page.custom_link_two and page.custom_link_text_two
+          %}
           <a
             href="{{ page.custom_link_two }}"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fas fa-link"> </i> {{ page.custom_link_text_two }}
+            <i class="fas fa-link"></i>
+            {{ page.custom_link_text_two }}
           </a>
-        </p>
-        {% endif %}
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Right Content Area -->
+      <div class="content">
+        <h1 class="project-title">{{ page.title }}</h1>
 
         <!-- Render sections dynamically -->
         {% for section in page.sections %}
