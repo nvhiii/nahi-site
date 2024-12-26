@@ -20,37 +20,47 @@ Welcome to my blog! Here, you'll find posts about things I find interesting or w
   {% endfor %}
 </div>
 
-<ul class="post-list">
+<div class="terminal-blog-container">
   {% for post in site.posts %}
-    <li class="post-item" data-tags="{{ post.tags | join: ' ' }}">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <span class="subitem">({{ post.date | date: "%b %d, %Y" }})</span>
-      {% if post.tags %}
-        <div class="post-tags">
-          {% for tag in post.tags %}
-            <span class="tag-label">#{{ tag }}</span>
-          {% endfor %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="terminal-post-link">
+      <div class="terminal-post-card" data-tags="{{ post.tags | join: ' ' }}">
+        <div class="terminal-window-header">
+          <div class="terminal-window-dots">
+            <span class="terminal-dot terminal-dot-red"></span>
+            <span class="terminal-dot terminal-dot-yellow"></span>
+            <span class="terminal-dot terminal-dot-green"></span>
+          </div>
+          <div class="terminal-window-title">{{ post.title }}</div>
         </div>
-      {% endif %}
-    </li>
+        <div class="terminal-window-content">
+          <div class="terminal-post-title">{{ post.title }}</div>
+          <div class="terminal-post-meta">{{ post.date | date: "%B %d, %Y" }}</div>
+          {% if post.tags %}
+            <div class="terminal-post-tags">
+              {% for tag in post.tags %}
+                <span class="terminal-tag">#{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </a>
   {% endfor %}
-</ul>
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const tagLinks = document.querySelectorAll('.tag-item a');
-  const posts = document.querySelectorAll('.post-item');
+  const posts = document.querySelectorAll('.terminal-post-card');
   
   tagLinks.forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       const selectedTag = this.getAttribute('data-tag');
       
-      // Update active state of tag links
       tagLinks.forEach(tl => tl.parentElement.classList.remove('active'));
       this.parentElement.classList.add('active');
       
-      // Show/hide posts based on selected tag
       posts.forEach(post => {
         if (selectedTag === 'all') {
           post.style.display = '';

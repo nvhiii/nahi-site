@@ -421,3 +421,130 @@ br {
 .external-links i {
   width: 16px;
 }
+
+/* Terminal Blog Post Styles */
+.terminal-blog-container {
+  max-width: 680px;
+  margin: 2rem auto;
+}
+
+.terminal-post-card {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.terminal-post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.terminal-post-card:after {
+  content: "Click to read post →";
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #27c93f;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.terminal-post-card:hover:after {
+  opacity: 1;
+}
+
+.terminal-window-header {
+  padding: 8px;
+  background: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.terminal-window-dots {
+  display: flex;
+  gap: 6px;
+  position: absolute;
+  left: 12px;
+}
+
+.terminal-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-dot-red {
+  background: #ff5f56;
+}
+
+.terminal-dot-yellow {
+  background: #ffbd2e;
+}
+
+.terminal-dot-green {
+  background: #27c93f;
+}
+
+.terminal-window-title {
+  width: 100%;
+  text-align: center;
+  font-family: -apple-system, system-ui, sans-serif;
+  font-size: 14px;
+  color: #666;
+}
+
+.terminal-window-content {
+  background: #292929;
+  color: #f0f0f0;
+  padding: 20px;
+  font-family: "Consolas", "Courier New", monospace;
+  line-height: 1.6;
+  min-height: 120px;
+}
+
+.terminal-post-title {
+  color: #f0f0f0;
+  text-decoration: none;
+  display: block;
+  margin-left: 16px;
+  font-size: 16px;
+}
+
+.terminal-post-title::before {
+  content: "$ ";
+  color: #27c93f;
+  font-weight: bold;
+}
+
+.terminal-post-meta {
+  margin: 8px 0 0 32px;
+  font-size: 14px;
+  color: #888;
+}
+
+.terminal-post-tags {
+  margin: 8px 0 0 32px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.terminal-tag {
+  color: #27c93f;
+  font-size: 14px;
+}
+
+/* Remove default link styling inside the terminal */
+.terminal-post-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
