@@ -2,7 +2,7 @@
 layout: post
 title: "Migrating to Jekyll"
 date: 2024-12-19 10:00:00 +0000
-tags: [tech]
+tags: [tutorial]
 footnotes:
   - "[Reddit Thread](https://www.reddit.com/r/webdev/comments/nr3gsb/what_are_your_thoughts_on_hugo_jekyll/)"
   - "[Hacked Jekyll Theme](https://github.com/piazzai/hacked-jekyll)"
