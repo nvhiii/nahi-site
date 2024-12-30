@@ -2,6 +2,7 @@
 layout: post
 title: "Academia Burnout and Recovery: A Personal Journey"
 date: 2024-12-29
+tags: [life]
 ---
 
 Recently, reconnecting with old friends from middle school revealed a common thread in our experiences: academia burnout. This manifests in various ways - feeling left behind, chronic procrastination, uncertainty about the future, struggles with mental health, and the complex interplay of pride and ego.

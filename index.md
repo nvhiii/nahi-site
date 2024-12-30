@@ -20,8 +20,11 @@ title: Nahi Khan
   </ul>
 - <a href="{{ site.baseurl }}/posts/" class="styled-link">[Blog]</a>
   <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts limit:5 %}
     <li class="subitem"><span class="date">{{ post.date | date: "%b %d, %Y" }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
+  {% if site.posts.size > 5 %}
+    <li class="subitem"><a href="{{ site.baseurl }}/posts/">...</a></li>
+  {% endif %}
   </ul>
 - <a href="{{ site.baseurl }}/sitemap.xml" class="styled-link">[SiteMap]</a>
