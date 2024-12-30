@@ -7,7 +7,7 @@ permalink: /about/
 ## About
 
 Hey, I'm Nahi.  
-I'm currently actively looking for SWE internships and SWE roles.
+I'm currently actively looking for SWE internships and SWE roles or cool things to work on.
 
 ### Interests
 

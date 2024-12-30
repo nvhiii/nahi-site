@@ -3,7 +3,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #F5F5DC;  /* Warm beige background */
   color: black;
 }
 
