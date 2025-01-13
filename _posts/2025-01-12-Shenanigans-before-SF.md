@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Shenanigans before SF"
-date: 2024-01-12 23:00:00 +0000
+date: 2025-01-12 23:00:00 +0000
 tags: [life]
 ---
 
